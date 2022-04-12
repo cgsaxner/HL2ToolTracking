@@ -1,0 +1,13 @@
+namespace HL2ToolTrackingWRC
+{
+    [default_interface]
+    runtimeclass HL2ToolTracking
+    {
+        HL2ToolTracking();
+        void Initialize(Windows.Perception.Spatial.SpatialCoordinateSystem refCoord);
+        void StartTracking();
+        void StopTracking();
+
+        Single[] ToolPosition{ get; };
+    }
+}
